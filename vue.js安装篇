@@ -1,27 +1,60 @@
 要下载安装vue首先得下载安装node.js和npm。下载安装好这两样以后就可以安装vue了。
 
 下载node.js
-https://nodejs.org/dist/
-
+下载地址：https://nodejs.org/dist/
+根据步骤安装，安装完毕后，
 把node.exe所在目录加入到PATH环境变量中。
-配置成功后可以在CMD中通过node --version 看到node.js对应的版本号
+配置成功后可以在CMD中通过node --version 看到node.js对应的版本号（证明成功）
 绝对路径：
 C:\Program Files\nodejs>node --version (结果：v10.14.2)
 
-npm:  nodejs 下的包管理器。所以，node.js大概率会自带npm，但可能不是最新版本。
+npm:  是node.js下的包管理器。所以，node.js大概率会自带npm，但可能不是最新版本。
 ---------
-下载npm
+★简易安装
+1.确认npm可以使用，且版本大于 3.0;
 
-【参考地址】：https://www.360kuai.com/pc/9ef2543f401247685?cota=4&tj_url=xz&sign=360_57c3bbd1&refer_scene=so_1
-【参考地址】：https://www.cnblogs.com/jianguo221/p/11487532.html
-【参考地址】：https://www.cnblogs.com/interdrp/p/6779973.html
-【参考地址】：https://blog.csdn.net/WYpersist/article/details/80496259
+2.安装Vue.js ,在用 Vue.js 构建大型应用时推荐使用 NPM 安装：
+# 最新稳定版
+$ npm install vue  (如果有下载cnpm命令，可以用cnpm，国内镜像)
 
-★Windows
+3.全局安装 vue-cli
+$ npm install --global vue-cli
+
+4.创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project (这边my-project为项目名)
+
+5.这里需要进行一些配置，默认回车即可（下面是可能出现的内容，可忽略）
+This will install Vue 2.x version of the template.
+
+For Vue 1.x use: vue init webpack#1.0 my-project
+
+? Project name my-project
+? Project description A Vue.js project
+? Author runoob <test@runoob.com>
+? Vue build standalone
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Standard
+? Setup unit tests with Karma + Mocha? Yes
+? Setup e2e tests with Nightwatch? Yes
+
+   vue-cli · Generated "my-project".
+
+6.cd my-project
+7.npm install
+8.npm run dev （运行）
+
+★Windows（其他下载）
 1.打开http://doc.vue-js.com/
 2.点击GITHUB
 3.左侧找到“Branch:***”，点击下拉框，可根据需求选择下载脚本的版本。我们这里保持默认即可（dev）。
 4.在右侧找到并点击“Clone or download“，在新弹出的对话框中选择”Download ZIP“，会调出下载程序下载VEU脚本框架。
 5.下载完后，我们可以看到"vue-dev.zip"的一个压缩包，这就是我们要下载的vue.js包，解压。
 6.进行定位到项目的路径，打开cmd，npm install安装依赖，安装成功后你会发现项目里多了个node_modules。
-7.安装完成后输入npm run dev，自动启动浏览器就会打开项目了
+
+
+
+【参考地址】：https://www.runoob.com/vue2/vue-install.html
+【参考地址】：https://www.360kuai.com/pc/9ef2543f401247685?cota=4&tj_url=xz&sign=360_57c3bbd1&refer_scene=so_1
+【参考地址】：https://www.cnblogs.com/jianguo221/p/11487532.html
+【参考地址】：https://www.cnblogs.com/interdrp/p/6779973.html
+【参考地址】：https://blog.csdn.net/WYpersist/article/details/80496259
