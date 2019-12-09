@@ -1,0 +1,26 @@
+要下载安装vue首先得下载安装node.js和npm。下载安装好这两样以后就可以安装vue了。
+
+下载node.js
+https://nodejs.org/dist/
+
+把node.exe所在目录加入到PATH环境变量中。
+配置成功后可以在CMD中通过node --version 看到node.js对应的版本号
+绝对路径：
+C:\Program Files\nodejs>node --version (结果：v10.14.2)
+
+npm:  nodejs 下的包管理器。所以，node.js大概率会自带npm，但可能不是最新版本。
+---------
+下载npm
+
+【参考地址】：https://www.360kuai.com/pc/9ef2543f401247685?cota=4&tj_url=xz&sign=360_57c3bbd1&refer_scene=so_1
+【参考地址】：https://www.cnblogs.com/jianguo221/p/11487532.html
+【参考地址】：https://www.cnblogs.com/interdrp/p/6779973.html
+
+★Windows
+1.打开http://doc.vue-js.com/
+2.点击GITHUB
+3.左侧找到“Branch:***”，点击下拉框，可根据需求选择下载脚本的版本。我们这里保持默认即可（dev）。
+4.在右侧找到并点击“Clone or download“，在新弹出的对话框中选择”Download ZIP“，会调出下载程序下载VEU脚本框架。
+5.下载完后，我们可以看到"vue-dev.zip"的一个压缩包，这就是我们要下载的vue.js包，解压。
+6.进行定位到项目的路径，打开cmd，npm install安装依赖，安装成功后你会发现项目里多了个node_modules。
+7.安装完成后输入npm run dev，自动启动浏览器就会打开项目了
